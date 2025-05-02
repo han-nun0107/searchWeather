@@ -44,3 +44,34 @@ export function today() {
 
   return `${year}-${month}-${date}`;
 }
+
+export function weatherCategory(id) {
+  if (id >= 200 && id < 300) return "Thunderstorm";
+  if (id >= 300 && id < 400) return "Drizzle";
+  if (id >= 500 && id < 600) return "Rain";
+  if (id >= 600 && id < 700) return "Snow";
+  if (id >= 700 && id < 800) return "Atmosphere";
+  if (id === 800) return "Clear";
+  if (id >= 800 && id < 900) return "Clouds";
+}
+
+export function getTempColor(temp) {
+  if (temp <= 0) return "text-blue-400";
+  if (temp <= 15) return "text-sky-500";
+  if (temp <= 25) return "text-green-500";
+  if (temp <= 30) return "text-orange-400";
+  return "text-red-500";
+}
+
+export function getWeatherCategory(weatherSt) {
+  console.log(weatherSt);
+  if (!weatherSt) return "default";
+  if (weatherSt === 201) return "test";
+  if (weatherSt >= 300 && weatherSt < 400) return "test";
+  if (weatherSt >= 500 && weatherSt < 600) return "test";
+  if (weatherSt >= 600 && weatherSt < 700) return "test";
+  if (weatherSt >= 700 && weatherSt < 800) return "test";
+  if (weatherSt === 800) return "test";
+  if (weatherSt > 800 && weatherSt < 900) return "test";
+  return "default";
+}

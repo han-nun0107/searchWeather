@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // 기준 경로
+    "paths": {
+      "@/*": ["src/*"],
+      "@utills/*": ["src/utills/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

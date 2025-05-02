@@ -1,9 +1,20 @@
-import { dayFormatDateTime } from "../../../utills/utills";
+import {
+  dayFormatDateTime,
+  getTempColor,
+  getWeatherCategory,
+} from "../../../utills/utills";
 import { cityNameEnToKo } from "../../name";
 import weatherDescko from "../weather";
 import ButtonNav from "./button";
 
 function DayMain({ weather }) {
+  const temp = Number(weather.main.temp.toFixed(1));
+  const tempColor = getTempColor(temp);
+
+  const weatherId = weather.weather[0].id;
+  const weatherBg = getWeatherCategory(weatherId);
+  const backgroundImg = `/assets/weatherBackground/${weatherBg}.jpg`;
+
   return (
     <>
       <div
@@ -17,13 +28,14 @@ function DayMain({ weather }) {
                 shadow-lg
                 text-center
           "
+        style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <h2>날짜: {dayFormatDateTime(weather.dt)}</h2>
         <h2>
           {cityNameEnToKo[weather.name] || weather.name}
           &nbsp;날씨
         </h2>
-        <p>온도: {Number(weather.main.temp.toFixed(1))}</p>
+        <p className={tempColor}>온도: {temp}</p>
         <p>풍속: {Number(weather.wind.speed.toFixed(1))}m/s</p>
         <p>
           상태:{" "}
