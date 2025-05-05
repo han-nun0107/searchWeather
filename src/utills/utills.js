@@ -64,7 +64,6 @@ export function getTempColor(temp) {
 }
 
 export function getWeatherCategory(weatherSt) {
-  console.log(weatherSt);
   if (!weatherSt) return "default";
   if (weatherSt >= 200 && weatherSt < 300) return "thunderstorm";
   if (weatherSt >= 300 && weatherSt < 400) return "drizzle";

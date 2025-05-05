@@ -46,6 +46,7 @@ function Weekily() {
               const tempText = temp(item);
               const weatherText = weatherDesc(item);
               const windSpeed = wind(item);
+              const weatherId = item.weather[0].id;
 
               const content = (
                 <>
@@ -56,6 +57,7 @@ function Weekily() {
                     weatherText={weatherText}
                     item={item}
                     windSpeed={windSpeed}
+                    weatherId={weatherId}
                   />
                 </>
               );

@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import WeatherContent from "../weather";
+
 function FourWeather({ index, content }) {
+  const { weather } = useContext(WeatherContent);
   return (
     <>
       <div
