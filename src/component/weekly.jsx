@@ -10,7 +10,7 @@ import {
 } from "../utills/utills";
 import { useWeaklyWeather } from "../hooks/fetchWeather";
 import WeaklyContent from "./comp/weaklyContent";
-import TodayWeather from "./comp/forecast/todayWeather";
+import TodayWeather from "./comp/forecast/fourTodayWeather";
 import FourWeather from "./comp/forecast/fourWeahter";
 import LoadingText from "./comp/loading";
 

@@ -26,7 +26,6 @@ function TodayWeather({ index, content }) {
           <p className="flex justify-center items-center font-black text-2xl mb-2">
             오늘의 날씨
           </p>
-          <p>Index:{index}</p>
           {content}
         </div>
       </div>

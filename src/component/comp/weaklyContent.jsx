@@ -16,14 +16,18 @@ function WeaklyContent({
   return (
     <>
       <div
-        className="bg-cover"
+        className="bg-cover rounded-xl"
         style={{
           backgroundImage: `url(${backgroundImg})`,
         }}
       >
-        <h2 className="text-xl font-bold mb-2">날짜 : {dateText}</h2>
+        <h2 className="text-xl font-bold mb-2 text-[#fafafb]">
+          날짜 : {dateText}
+        </h2>
         <h2 className="text-lg font-semibold mb-2">{cityText} 날씨</h2>
-        <p className={`text-md mb-1 ${tempColor}`}>온도 : {tempText}</p>
+        <p className={`text-md mb-1 font-black ${tempColor}`}>
+          온도 : {tempText}
+        </p>
         <p className="text-md mb-1">상태: {weatherText}</p>
         <p className="text-md mb-4">풍속: {windSpeed}</p>
         <img
