@@ -23,12 +23,13 @@ function DayMain({ weather }) {
                 border rounded-2xl
                 mx-auto my-5
                 w-[90%] max-w-[500px]
-                bg-gradient-to-r from-blue-400 to-cyan-400
                 p-6
                 shadow-lg
                 text-center
           "
-        style={{ backgroundImage: `url(${backgroundImg})` }}
+        style={{
+          backgroundImage: `url(${backgroundImg})`,
+        }}
       >
         <h2>날짜: {dayFormatDateTime(weather.dt)}</h2>
         <h2>
