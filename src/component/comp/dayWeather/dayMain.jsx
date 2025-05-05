@@ -25,6 +25,7 @@ function DayMain({ weather }) {
                 p-6
                 shadow-lg
                 text-center
+                bg-cover
           "
         style={{
           backgroundImage: `url(${backgroundImg})`,

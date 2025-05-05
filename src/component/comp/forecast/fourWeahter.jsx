@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import WeatherContent from "../weather";
+import { WeatherContext } from "../../../context/weatherContext";
 
 function FourWeather({ index, content }) {
-  const { weather } = useContext(WeatherContent);
+  const { weather } = useContext(WeatherContext);
+  console.log(weather);
   return (
     <>
       <div
