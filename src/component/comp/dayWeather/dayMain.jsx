@@ -10,7 +10,6 @@ import ButtonNav from "./button";
 function DayMain({ weather }) {
   const temp = Number(weather.main.temp.toFixed(1));
   const tempColor = getTempColor(temp);
-
   const weatherId = weather.weather[0].id;
   const weatherBg = getWeatherCategory(weatherId);
   const backgroundImg = `/assets/weatherBackground/${weatherBg}.jpg`;

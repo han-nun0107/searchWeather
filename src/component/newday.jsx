@@ -7,7 +7,6 @@ import {
   temp,
   today,
   weatherDesc,
-  weatherState,
   wind,
 } from "../utills/utills";
 import { useWeaklyWeather } from "../hooks/fetchWeather";
@@ -65,7 +64,6 @@ function DayWeather() {
                   const tempText = temp(item);
                   const weatherText = weatherDesc(item);
                   const windSpeed = wind(item);
-                  const weatherSt = weatherState(item);
 
                   const content = (
                     <>
@@ -77,7 +75,6 @@ function DayWeather() {
                         item={item}
                         windSpeed={windSpeed}
                         weather={weather}
-                        weatherSt={weatherSt}
                       />
                     </>
                   );
