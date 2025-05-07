@@ -12,18 +12,23 @@ function TodayWeather({ index, content }) {
         "
       >
         <div
-          className="
-              bg-white 
-              shadow-lg 
-              rounded-2xl 
-              p-6 
+          className={`//bg-[#fafafb]
+              //shadow-lg 
+              border border-black rounded-2xl 
+              p-3 
               w-full 
               max-w-md 
               text-center
-              transition-transform transform hover:scale-105
-          "
+              transition-transform transform hover:scale-105`}
         >
-          <p className="flex justify-center items-center font-black text-2xl mb-2">
+          <p
+            className="
+          flex
+          justify-center items-center
+          text-[#fafafb] text-2xl
+          font-black
+          mb-2"
+          >
             오늘의 날씨
           </p>
           {content}

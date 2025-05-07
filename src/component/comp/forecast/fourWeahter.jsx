@@ -7,7 +7,8 @@ function FourWeather({ index, content }) {
                 flex 
                 justify-center items-center
                 transition-transform transform hover:scale-105
-
+                p-4
+                rounded-xl
                 "
         >
           {content}

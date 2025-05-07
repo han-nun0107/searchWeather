@@ -12,7 +12,7 @@ import {
 import { useWeaklyWeather } from "../hooks/fetchWeather";
 import WeaklyContent from "./comp/weaklyContent";
 import LoadingText from "./comp/loading";
-import NewWeather from "./comp/newday/newWeather";
+import NewWeather from "./comp/newday(3hours)/newWeather";
 
 function DayWeather() {
   const { weather, setWeather, city, error, setError, apiKey } =
@@ -64,6 +64,7 @@ function DayWeather() {
                   const tempText = temp(item);
                   const weatherText = weatherDesc(item);
                   const windSpeed = wind(item);
+                  const weatherId = item.weather[0].id;
 
                   const content = (
                     <>
@@ -75,6 +76,7 @@ function DayWeather() {
                         item={item}
                         windSpeed={windSpeed}
                         weather={weather}
+                        weatherId={weatherId}
                       />
                     </>
                   );

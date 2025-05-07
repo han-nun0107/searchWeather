@@ -3,7 +3,7 @@ import Weekly from "./component/weekly";
 import Day from "./component/day";
 import { WeatherProvider } from "./context/weahterProvider";
 import { BrowserRouter, Link, Outlet, Route, Routes } from "react-router-dom";
-import DayWeather from "./component/newday";
+import DayWeather from "./component/newday3hour";
 
 function Layout() {
   return (

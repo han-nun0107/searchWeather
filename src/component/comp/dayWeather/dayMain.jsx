@@ -31,14 +31,18 @@ function DayMain({ weather }) {
           backgroundImage: `url(${backgroundImg})`,
         }}
       >
-        <h2>날짜: {dayFormatDateTime(weather.dt)}</h2>
-        <h2>
+        <h2 className="text-[#fafafb]">
+          날짜: {dayFormatDateTime(weather.dt)}
+        </h2>
+        <h2 className="text-[#fafafb]">
           {cityNameEnToKo[weather.name] || weather.name}
           &nbsp;날씨
         </h2>
         <p className={tempColor}>온도: {temp}</p>
-        <p>풍속: {Number(weather.wind.speed.toFixed(1))}m/s</p>
-        <p>
+        <p className="text-[#fafafb]">
+          풍속: {Number(weather.wind.speed.toFixed(1))}m/s
+        </p>
+        <p className="text-[#fafafb]">
           상태:{" "}
           {weatherDescko[weather.weather[0].id] ||
             weather.weather[0].description}
