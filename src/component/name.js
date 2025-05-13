@@ -69,7 +69,7 @@ export const cityNameEnToKo = {
   LosAngeles: "로스앤젤레스",
   Boston: "보스턴",
   Barcelona: "바르셀로나",
-  "Kuala Lumpur": "쿠알라룸푸르",
+  KualaLumpur: "쿠알라룸푸르",
   Wuhan: "우한",
   Tianjin: "톈진",
   Shenzhen: "선전",

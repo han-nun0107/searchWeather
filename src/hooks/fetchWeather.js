@@ -4,9 +4,6 @@ import { InputName } from "../component/Inputname";
 export function useWeaklyWeather(city, apiKey, setWeather, setError) {
   useEffect(() => {
     const fetchWeather = async () => {
-      console.log("현재 city 값:", city);
-      console.log("InputName 객체 전체:", InputName);
-      console.log("InputName[city]로 찾은 ID:", InputName[city]);
       const cityID = InputName[city];
       if (!cityID) {
         setError("지원하지 않는 지역입니다.");

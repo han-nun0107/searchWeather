@@ -17,27 +17,28 @@ function InputForm() {
   };
 
   return (
-    <div className="flex items-center justify-center gap-4 my-6">
-      <input
-        type="text"
-        ref={inputRef}
-        placeholder="지역을 입력 해주세요"
-        className="
-        bg-white
+    <div className="flex items-center justify-center gap-4 p-2 bg-[#2F3E53]">
+      <div className="flex gap-4">
+        <input
+          type="text"
+          ref={inputRef}
+          placeholder="지역을 입력 해주세요"
+          className="
+        bg-[#fafafb]
           border border-gray-300 rounded-lg 
           p-2 w-64
           focus:outline-none focus:ring-2 focus:ring-blue-400
           transition
         "
-        onKeyDown={(e) => {
-          if (e.key === "Enter") {
-            handleSubmit();
-          }
-        }}
-      />
-      <button
-        onClick={handleSubmit}
-        className="
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleSubmit();
+            }
+          }}
+        />
+        <button
+          onClick={handleSubmit}
+          className="
           border border-black rounded-lg
           p-2 w-24
           bg-white
@@ -45,9 +46,10 @@ function InputForm() {
           transition-colors
           active:scale-95
         "
-      >
-        검색
-      </button>
+        >
+          검색
+        </button>
+      </div>
     </div>
   );
 }

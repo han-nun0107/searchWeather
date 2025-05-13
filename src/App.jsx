@@ -8,7 +8,7 @@ import DayWeather from "./component/newday3hour";
 function Layout() {
   return (
     <>
-      <header className="grid grid-cols-1 items-center justify-between bg-gray-800 h-13">
+      <header className="grid grid-cols-1 items-center justify-between bg-gray-800 h-13 w-full ">
         <nav className="flex items-center justify-between gap-6 text-xl font-semibold text-white">
           <div className="flex ml-2">
             <Link to="/">Weather</Link>

@@ -2,8 +2,7 @@ function NewWeather({ content }) {
   return (
     <>
       <div
-        className={`//bg-[#1a1a1a] 
-                //shadow-lg
+        className={`
                 border border-black rounded-2xl 
                 p-6 
                 w-full 

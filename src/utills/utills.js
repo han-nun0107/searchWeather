@@ -74,3 +74,19 @@ export function getWeatherCategory(weatherSt) {
   if (weatherSt >= 801 && weatherSt < 900) return "clouds";
   return "default";
 }
+
+export function dateWeatherBackground(temp) {
+  if (temp <= 0) return "bg-[#789CCE]";
+  if (temp <= 15) return "bg-[#D1EAF5]";
+  if (temp <= 25) return "bg-[#E1E7E7]";
+  if (temp <= 30) return "bg-[#FBD5B0]";
+  return "bg-[#FFC6D0]";
+}
+
+export function mainWeatherBackground(temp) {
+  if (temp <= 0) return "bg-gradient-to-r from-[##fafafb] to-[#789CCE]";
+  if (temp <= 15) return "bg-gradient-to-r from-[#D1EAF5] to-[#E1E7E7]";
+  if (temp <= 25) return "bg-gradient-to-r from-[#E1E7E7] to-[#FBD5B0]";
+  if (temp <= 30) return "bg-gradient-to-r from-[#FBD5B0] to-[#FFC6D0]";
+  return "bg-[#FFC6D0]";
+}
